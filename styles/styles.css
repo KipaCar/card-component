@@ -16,7 +16,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    height: 100vh;
+    
+    
 }
 .container{
     display: flex;
@@ -31,9 +33,88 @@ figure{
 figure img{
     height: 100%;
     margin: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 section{
     background-color: var(--white);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     height: 100%;
     margin: 0;
+    padding: 1.7rem;
+    box-sizing: border-box;
+  
+}
+span{
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+}
+h1{
+    font-size: 1.8rem;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.description {
+    color: var(--dark-grayish-blue);
+    font-family: "montserrat", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.price-one {
+    color:var(--dark-cyan);
+    font-weight:700;
+    font-size: 1.7rem;
+    font-family: "fraunces";
+    margin: 0;
+}
+p.price-two{
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-family: "montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+.cart{
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:700
+}
+.cart img{
+    margin-right: 0.4rem;
+}
+
+.cart:hover{
+    cursor: pointer;
+    background-color: var(--very-dark-blue);
+}
+
+/* Media Query */
+@media only screen and (min-width: 1024px) {
+    .mobile {
+      display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    figure img {
+      display: none;
+    }
 }
